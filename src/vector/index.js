@@ -248,14 +248,14 @@ async function loadApp() {
 
     if (!preventRedirect) {
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-            if (confirm(languageHandler._t("Riot is not supported on mobile web. Install the app?"))) {
-                window.location = "https://itunes.apple.com/us/app/vector.im/id1083446067";
+            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje.") {
+                window.location = "https://www.akcjademokracja.pl/chat/ios";
                 return;
             }
         }
         else if (/Android/.test(navigator.userAgent)) {
-            if (confirm(languageHandler._t("Riot is not supported on mobile web. Install the app?"))) {
-                window.location = "https://play.google.com/store/apps/details?id=im.vector.alpha";
+            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje.") {
+                window.location = "https://www.akcjademokracja.pl/chat/android";
                 return;
             }
         }
