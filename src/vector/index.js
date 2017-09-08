@@ -248,13 +248,13 @@ async function loadApp() {
 
     if (!preventRedirect) {
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje.") {
+            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje.")) {
                 window.location = "https://www.akcjademokracja.pl/chat/ios";
                 return;
             }
         }
         else if (/Android/.test(navigator.userAgent)) {
-            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje.") {
+            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje."))
                 window.location = "https://www.akcjademokracja.pl/chat/android";
                 return;
             }
