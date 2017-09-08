@@ -254,7 +254,7 @@ async function loadApp() {
             }
         }
         else if (/Android/.test(navigator.userAgent)) {
-            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje."))
+            if (confirm("Aby używać czatu na swojej komórce, zainstaluj aplikację. Kliknij OK, aby uzyskać dalsze instrukcje.")) {
                 window.location = "https://www.akcjademokracja.pl/chat/android";
                 return;
             }
